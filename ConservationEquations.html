@@ -27,10 +27,11 @@
     $$\nabla = \frac{\partial}{\partial\mathbf{x}},\ f = f(\mathbf{x},t)$$
     Eulerian coordinate system은 고정좌표계이기 때문에 입자의 위치를 고정하여 유입(inflow)과 방출(outflow)되는 양을 계산한다. 
     이때 입자의 크기는 유체역학 관점에서는 미분을 적용할 수 있을 정도로 작지만, macroscopic 범주이므로 상태특성(state property)을 통계적으로 규정할 수 있다.
+    #thermodynamics<br>
     보존식의 형태는 다음과 같다.
     $$\text{(variation by time)-(variation by space)=(body source)+(surface source)}$$
-    고정 영역에서 시공간적인 변화는 body와 surface source 합과 같다. 고정 영역 \(\Omega\)에 대해 property \(f\)의 variation by space는 다음과 같다.<br>
-    (영역 그림 추가)
+    고정 영역에서 시공간적인 변화는 body와 surface source 합과 같다. 고정 영역 \(\Omega\)에 대해 property \(f\)의 variation by space는 다음과 같다.#volume<br>
+    (영역 그림 추가)<br>
     axis 1:
     $$\epsilon^{(3)}\cdot(f(\mathbf{x},t)\mathbf{u}_1(\mathbf{x},t))\cdot d\mathbf{x}_2\cdot d\mathbf{x}_3-\epsilon^{(3)}\cdot(f(\mathbf{x}+d\mathbf{x}_1,t)\mathbf{u}_1(\mathbf{x}+d\mathbf{x}_1,t))\cdot d\mathbf{x}_2\cdot d\mathbf{x}_3=-\frac{\partial (f\mathbf{u}_1)}{\partial x_1}\cdot\hat{\mathbf{x}}_1 dV\llap{-}(\mathbf{x})$$
     where
@@ -43,14 +44,16 @@
     유체역학에서의 mass conservation equation은 다음과 같다.
     $$\frac{\partial\rho}{\partial t}+\nabla\cdot(\rho\mathbf{u})=0$$
     where \(\rho\): density, \(\mathbf{u}\): velocity
-    Free field에서 mass에 대한 source는 없다.
+    Free field에서 mass에 대한 source는 없다.<br>
   </p>
   <h2>Momentum conservation</h2>
   <p>
     유체역학에서의 momentum conservation equation은 다음과 같다.
     $$\frac{\partial(\rho\mathbf{u})}{\partial t}+\nabla\cdot(\rho\mathbf{uu})=\rho\mathbf{g}-\nabla p+\nabla\cdot\boldsymbol \sigma$$
-    where \(\mathbf{g}\): acceleration of gravity, \(p\): thermodynamic pressure and \(\boldsymbol \sigma\): additional stress component
-    Free field에서 body force로 중력이 작용하고, surface force로 stress가 작용한다. 
+    where \(\mathbf{g}\): acceleration of gravity, \(p\): thermodynamic pressure and \(\boldsymbol \sigma\): additional stress component<br>
+    Free field에서 body force로 중력이 작용하고, surface force로 stress가 작용한다. Stress는 thermodynamic pressure와 additional stress component로 구성된다.
+       
+    
   </p>
 </body>
 </html>
