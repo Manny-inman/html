@@ -23,14 +23,14 @@
   <p>
     고전역학에서는 세가지 보존식이 성립한다. 이는 mass, momentum, energy이며 유체역학(fluid dynamics) 역시 성립한다.<br>
     모든 보존식은 Eulerian coordinate system에 기반하고 있다.
-    즉, 독립변수는 \(\mathbf{x}\)와 \(t\)이고
+    즉, 독립변수는 \(\mathbf{x}\)와 \(t\)이고 다음을 만족한다.
     $$\nabla = \frac{\partial}{\partial\mathbf{x}},\ f = f(\mathbf{x},t)$$
     Eulerian coordinate system은 고정좌표계이기 때문에 입자의 위치를 고정하여 유입(inflow)과 방출(outflow)되는 양을 계산한다. 
-    이때 입자의 크기는 유체역학 관점에서는 미분을 적용할 수 있을 정도로 작지만, macroscopic 범주이므로 상태특성(state property)을 통계적으로 규정할 수 있다.
+    이때 입자의 크기는 유체역학 관점에서는 미분을 적용할 수 있을 정도로 작지만, macroscopic 범주이므로 열역학적 특성(thermodynamic property)들을 통계적으로 규정할 수 있다.
     #thermodynamics<br>
     보존식의 형태는 다음과 같다.
     $$\text{(variation by time)+(variation by space)=(body source)+(surface source)}$$
-    고정 영역에서 시공간적인 변화는 body와 surface source 합과 같다. 고정 영역 \(\Omega\)에 대해 property \(f\)의 variation by space는 다음과 같다.#volume<br>
+    시공간적인 특성 변화는 body와 surface source 합과 같다. 고정 영역 \(\Omega\)에 대해 property \(f\)의 variation by space는 다음과 같다.#volume<br>
     (영역 그림 추가)<br>
     axis 1:
     $$\varepsilon^{(3)}\cdot(f(\mathbf{x}+d\mathbf{x}_1,t)\mathbf{u}(\mathbf{x}+d\mathbf{x}_1,t))\cdot d\mathbf{x}_2\cdot d\mathbf{x}_3-\varepsilon^{(3)}\cdot(f(\mathbf{x},t)\mathbf{u}(\mathbf{x},t))\cdot d\mathbf{x}_2\cdot d\mathbf{x}_3=\frac{\partial (f\mathbf{u})}{\partial x_1}\cdot\hat{\mathbf{x}}_1 dV\llap{-}(\mathbf{x})$$
@@ -43,8 +43,8 @@
   <p>
     유체역학에서의 mass conservation equation은 다음과 같다.
     $$\frac{\partial\rho}{\partial t}+\nabla\cdot(\rho\mathbf{u})=0$$
-    where \(\rho\): density, \(\mathbf{u}\): velocity
-    Free field에서 mass에 대한 source는 없다.<br>
+    where \(\rho\): density and \(\mathbf{u}\): particle velocity<br>
+    Free field에서 mass에 대한 source는 없다.
   </p>
   <h2>Momentum conservation</h2>
   <p>
@@ -59,11 +59,8 @@
   <p>
     유체역학에서의 energy conservation equation은 다음과 같다.
     $$\frac{\partial(\rho\varepsilon)}{\partial t}+\nabla\cdot(\rho\varepsilon\mathbf{u})=\rho\mathbf{g}\cdot\mathbf{u}-\nabla\cdot (p\mathbf{u})+\nabla\cdot(\boldsymbol \sigma\cdot\mathbf{u})-\nabla\cdot\mathbf{q}$$
-    where \(\varepsilon = e+frac{1}{2}\mathbf{u}\cdot\mathbf{u}\): fluid particle total(internal+kinetic) energy<br>
+    where \(\varepsilon = e+\frac{1}{2}\mathbf{u}\cdot\mathbf{u}\): fluid particle total(internal+kinetic) energy<br>
     \(\mathbf{q}\): heat flux vector
-    Free field에서 body force로 중력이 작용하고, surface force로 stress가 작용한다. Stress는 thermodynamic pressure와 deviatoric stress tensor로 구성된다.
-    유체를 Newtonian isotropic fluid라 가정하면 deviatoric stress tensor는 다음과 같다.#constituve equation
-    $$\boldsymbol \sigma =2\mu\nabla\mathbf{u}+\lambda\nabla\cdot\mathbf{u}$$
   </p>
 </body>
 </html>
