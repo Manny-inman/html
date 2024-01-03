@@ -58,7 +58,7 @@
   <h2>Energy conservation</h2>
   <p>
     유체역학에서의 energy conservation equation은 다음과 같다.
-    $$\frac{\partial(\rho\mathbf{u})}{\partial t}+\nabla\cdot(\rho\mathbf{uu})=\rho\mathbf{g}-\nabla p+\nabla\cdot\boldsymbol \sigma$$
+    $$\frac{\partial(\rho\epsilon)}{\partial t}+\nabla\cdot(\rho\epsilon\mathbf{u})=\rho\mathbf{g}\cdot\mathbf{u}-\nabla\cdot (p\mathbf{u})+\nabla\cdot(\boldsymbol \sigma\cdot\mathbf{u})$$
     where \(\mathbf{g}\): acceleration of gravity, \(p\): thermodynamic pressure and \(\boldsymbol \sigma\): deviatoric stress tensor<br>
     Free field에서 body force로 중력이 작용하고, surface force로 stress가 작용한다. Stress는 thermodynamic pressure와 deviatoric stress tensor로 구성된다.
     유체를 Newtonian isotropic fluid라 가정하면 deviatoric stress tensor는 다음과 같다.#constituve equation
