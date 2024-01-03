@@ -53,16 +53,17 @@
     where \(\mathbf{g}\): acceleration of gravity, \(p\): thermodynamic pressure and \(\boldsymbol \sigma\): deviatoric stress tensor<br>
     Free field에서 body force로 중력이 작용하고, surface force로 stress가 작용한다. Stress는 thermodynamic pressure와 deviatoric stress tensor로 구성된다.
     유체를 Newtonian isotropic fluid라 가정하면 deviatoric stress tensor는 다음과 같다.#constituve equation
-    $$\boldsymbol \sigma =2\mu\nabla\mathbf{u}+\lambda\nabla\cdot\mathbf{u}
+    $$\boldsymbol \sigma =2\mu\nabla\mathbf{u}+\lambda\nabla\cdot\mathbf{u}$$
   </p>
   <h2>Energy conservation</h2>
   <p>
     유체역학에서의 energy conservation equation은 다음과 같다.
-    $$\frac{\partial(\rho\epsilon)}{\partial t}+\nabla\cdot(\rho\epsilon\mathbf{u})=\rho\mathbf{g}\cdot\mathbf{u}-\nabla\cdot (p\mathbf{u})+\nabla\cdot(\boldsymbol \sigma\cdot\mathbf{u})$$
-    where \(\mathbf{g}\): acceleration of gravity, \(p\): thermodynamic pressure and \(\boldsymbol \sigma\): deviatoric stress tensor<br>
+    $$\frac{\partial(\rho\varepsilon)}{\partial t}+\nabla\cdot(\rho\varepsilon\mathbf{u})=\rho\mathbf{g}\cdot\mathbf{u}-\nabla\cdot (p\mathbf{u})+\nabla\cdot(\boldsymbol \sigma\cdot\mathbf{u})-\nabla\cdot\mathbf{q}$$
+    where \(\varepsilon = e+frac{1}{2}\mathbf{u}\cdot\mathbf{u}\): fluid particle total(internal+kinetic) energy<br>
+    \(\mathbf{q}\): heat flux vector
     Free field에서 body force로 중력이 작용하고, surface force로 stress가 작용한다. Stress는 thermodynamic pressure와 deviatoric stress tensor로 구성된다.
     유체를 Newtonian isotropic fluid라 가정하면 deviatoric stress tensor는 다음과 같다.#constituve equation
-    $$\boldsymbol \sigma =2\mu\nabla\mathbf{u}+\lambda\nabla\cdot\mathbf{u}
+    $$\boldsymbol \sigma =2\mu\nabla\mathbf{u}+\lambda\nabla\cdot\mathbf{u}$$
   </p>
 </body>
 </html>
