@@ -19,12 +19,18 @@
 </header>
 <body>
   <h1>Conservation Equations</h1>
-  <h2>Lagrangian Coordinate System</h2>
+  <h2>Introduction</h2>
   <p>
-    동역학에서는 강체를 대상으로 운동을 수학적으로 기술한다.
-    일반적으로는 단수 또는 소수의 대상 물체(matter)가 정해져 있기 때문에 독립변수는 오직 시간이다.
-    예를 들면, 대표적인 property인 변위, 속도는 아래와 같이 나타낸다.
-    $$ \mathbf{s} = \mathbf{s}(t),\ \mathbf{v}=\mathbf{v}(t) $$
+    고전역학에서는 세가지 보존식이 성립한다. 이는 mass, momentum, energy이며 유체역학(fluid dynamics) 역시 성립한다.<br>
+    모든 보존식은 Eulerian coordinate system에 기반하고 있다.
+    즉, 독립변수는 $mathbf{x}$와 $t$이고
+    $$\nabla = \frac{\partial}{\partial\mathbf{x}},\ f = f(\mathbf{x},t)$$
+  </p>
+  <h2>Mass Conservation</h2>
+  <p>
+    유체역학에서의 mass conservation equation은 다음과 같다.
+    $$\frac{\partial\rho}{\partial t}+\nabla\cdot\mathbf{u}=0$$
+    where $\rho$: density, 
   </p>
 </body>
 </html>
