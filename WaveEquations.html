@@ -34,12 +34,17 @@
     where \(\phi_{\mathbf{g}}\): gravity potential<br>
     좌변은 선형파동방정식이고, 우변은 비선형성에서 발생하는 음원(acoustic source)들이다.
     우변은 형태에서 알 수 있듯 convection, viscosity, gravity 그리고 nonlinear material property 항들이다.
+Thermodynamic pressure는 통계적, 유체역학적, 음향학적 모든 특성을 나타내지만 그 스케일이 서로 매우 다르기때문에 음향학에서는 음향적인 변화만 고려한다.
+지배방정식에서는 pressure의 변화에 대한 항만 존재하므로, thermodynamic pressure와 acoustic pressure를 구분하지않고 사용할 수 있다.
   </p>
   <h3>Linear acoustic wave equation</h3>
   <p>
     음속 \(c\)는 thermodynamic property로 다음과 같이 정의된다.
     $$c\equiv\sqrt{\left.\frac{\partial p}{\partial\rho}\right|_s}$$
-    Linear acoustics에서는
+    Linear acoustics에서는 \(dp\)와 \(d\rho\)가 비례하므로, 음속을 상수 \(c_0\)으로 규정한다.
+$$c=c_0$$
+그리고 우변의 비선형항들을 무시하면 p에 대한 완벽한 선형파동방정식이 된다.
+$$\nabla^p-\frac{1}{c_0^2}\frac{\partial^2p}{\partial t^2}=0$$
 
       
   $c\equiv\sqrt{\left.\frac{\partial p}{\partial\rho}\right|_s}$
