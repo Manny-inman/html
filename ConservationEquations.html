@@ -59,8 +59,10 @@
   <p>
     유체역학에서의 energy conservation equation은 다음과 같다.
     $$\frac{\partial(\rho\varepsilon)}{\partial t}+\nabla\cdot(\rho\varepsilon\mathbf{u})=\rho\mathbf{g}\cdot\mathbf{u}-\nabla\cdot (p\mathbf{u})+\nabla\cdot(\boldsymbol \sigma\cdot\mathbf{u})-\nabla\cdot\mathbf{q}$$
-    where \(\varepsilon = e+\frac{1}{2}\mathbf{u}\cdot\mathbf{u}\): fluid particle total(internal+kinetic) energy<br>
-    \(\mathbf{q}\): heat flux vector
+    where \(\varepsilon = e+\frac{1}{2}\mathbf{u}\cdot\mathbf{u}\): fluid particle total(internal+kinetic) energy, \(\mathbf{q}\): heat flux vector<br>
+    Energy conservation equation에서 momentum, mass conservation equation을 빼면 internal energy에 대한 식이 도출된다.
+    $$\frac{De}{Dt} = -p\frac{D(1/\rho)}{Dt}+\frac{1}{\rho}\boldsymbol \sigma:(\nabla mathbf{u})-\frac{1}{\rho}\nabla\cdot\mathbf{q}$$
+    이때 \(\frac{D}{Dt}\)는 material derivative이며, 이는 Lagrangian coordinate system에서 시간 미분한 것이다. Eulerian coordinate system에서는 \(\frac{\partial}{\partial t}+(\mathbf{u}\cdot\nabla)\)로 표현된다.
   </p>
 </body>
 </html>
