@@ -8,5 +8,6 @@
 
 개인 홈페이지 제작을 위한 초석
 
-![GitHub release version](https://img.shields.io/github/v/release/mathjax/MathJax-src.svg?sort=semver)
 [Conservation Equations](https://manny-inman.github.io/html/ConservationEquations.html)
+
+[Wave Equations](https://manny-inman.github.io/html/WaveEquations.html)
