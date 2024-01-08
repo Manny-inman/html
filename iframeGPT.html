@@ -7,9 +7,27 @@
 </head>
 <body>
 
-<!-- Existing iframe -->
-<iframe id="myIframe" src="/WaveEquations.html" width="600" height="400" frameborder="0"></iframe>
 
+<script>
+  // Function to replace the iframe
+  function replaceIframe() {
+    // Create a new iframe element
+    var newIframe = document.createElement('iframe');
+    
+    // Set attributes for the new iframe
+    newIframe.src = '/WaveEquations.html';
+    newIframe.width = '800';
+    newIframe.height = '600';
+    newIframe.frameborder = '0';
+
+    // Replace the existing iframe with the new one
+    var existingIframe = document.getElementById('myIframe');
+    existingIframe.parentNode.replaceChild(newIframe, existingIframe);
+  }
+
+  // Call the replaceIframe function to replace the iframe
+  replaceIframe();
+</script>
 
 </body>
 </html>
