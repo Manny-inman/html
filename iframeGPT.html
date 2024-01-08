@@ -6,6 +6,10 @@
   <title>Replace iframe</title>
 </head>
 <body>
+
+<!-- Existing iframe -->
+<iframe id="myIframe" src="https://example.com" width="600" height="400" frameborder="0"></iframe>
+
 <script>
   // Function to replace the iframe
   function replaceIframe() {
@@ -13,10 +17,14 @@
     var newIframe = document.createElement('iframe');
     
     // Set attributes for the new iframe
-    newIframe.src = '/WaveEquations.html';
-    newIframe.width = '100%';
+    newIframe.src = 'https://newexample.com';
+    newIframe.width = '800';
     newIframe.height = '600';
     newIframe.frameborder = '0';
+
+    // Replace the existing iframe with the new one
+    var existingIframe = document.getElementById('myIframe');
+    existingIframe.parentNode.replaceChild(newIframe, existingIframe);
   }
 
   // Call the replaceIframe function to replace the iframe
