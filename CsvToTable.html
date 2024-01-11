@@ -27,7 +27,7 @@
     function parseCSV(csv) {
         // Use a CSV parsing library or custom logic
         // Here, we are using PapaParse library
-        const parsedData = Papa.parse(csv, { header: true }).data;
+        const parsedData = Papa.parse(csv, { header: false }).data;
         return parsedData;
     }
 
