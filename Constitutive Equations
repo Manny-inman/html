@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="auther" content="Inman Jang" />
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Manny's Note</title>
+  <!-- link rel="stylesheet" href="css/style.css" -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+  </script>
+</head>
+<header>
+  <h1>Manny's Private Note</h1>
+  <p>내용 정리용</p>
+  <hr />
+</header>
+<body>
+  <h1>Constitutive Equations</h1>
+  <h2>Introduction</h2>
+  <p>
+    Something intro is need....
+  </p>
+  <h2Material Phase</h2>
+  <p>
+    고체와 액체, 기체의 차이를 물리적으로 정의해본 적 있는가? 이번 정의는 오로지 나의 주관적인 생각이며 실제 정의와 전혀 다를 수 있다.
+고체와 유체(액체+기체)의 가장 큰 차이는 탄성이다. 고체는 형태가 있으며 구조가 훼손되지 않는 선에서 힘을 주어 변형시키면 탄성력이 생겨 형태를 복원하려한다. 반면 유체는 탄성력이 없기 때문에 형태를 변형시켜도 변형된 모습을 유지한다.
+액체와 기체의 차이점은 부피이다. closed system에서 
+유체역학 보존식으로부터 acoustic wave equation을 유도할 수 있다.
+    mass conservation 식에 시간미분을, momentum conservation 식에 divergence를 해서 각각 빼면 아래와 같다.
+    $$\frac{\partial}{\partial t}\left(\frac{\partial\rho}{\partial t}+\nabla\cdot(\rho\mathbf{u})=0\right)$$
+    $$\nabla\cdot\left(\frac{\partial(\rho\mathbf{u})}{\partial t}+\nabla\cdot(\rho\mathbf{uu})=\rho\mathbf{g}-\nabla p+\nabla\cdot\boldsymbol \sigma\right)$$
+    $$\frac{\partial ^2\rho}{\partial t^2}-\nabla\nabla:(\rho\mathbf{uu})=-\nabla\cdot\rho\mathbf{g}+\nabla^2p-\nabla\nabla:\boldsymbol\sigma$$
+    $$\nabla^2p-\frac{1}{c^2}\frac{\partial^2p}{\partial t^2}=\nabla\nabla:(-\rho\mathbf{uu}+\boldsymbol\sigma+\rho\phi_{\mathbf{g}})-\frac{1}{c^2}\frac{\partial^2}{\partial t^2}(p-\rho c^2)$$
+    where \(\phi_{\mathbf{g}}\): gravity potential<br>
+    좌변은 선형파동방정식이고, 우변은 비선형성에서 발생하는 음원(acoustic source)들이다.
+    우변은 형태에서 알 수 있듯 convection, viscosity, gravity 그리고 nonlinear material property 항들이다.
+Thermodynamic pressure는 통계적, 유체역학적, 음향학적 모든 특성을 나타내지만 그 스케일이 서로 매우 다르기때문에 음향학에서는 음향적인 변화만 고려한다.
+지배방정식에서는 pressure의 변화에 대한 항만 존재하므로, thermodynamic pressure와 acoustic pressure를 구분하지않고 사용할 수 있다.
+  </p>
+  <h3>Linear acoustic wave equation</h3>
+  <p>
+    음속 \(c\)는 thermodynamic property로 다음과 같이 정의된다.
+    $$c\equiv\sqrt{\left.\frac{\partial p}{\partial\rho}\right|_s}$$
+    Linear acoustics에서는 \(dp\)와 \(d\rho\)가 비례하므로, 음속을 상수 \(c_0\)으로 규정한다.
+$$c=c_0$$
+그리고 우변의 비선형항들을 무시하면 p에 대한 완벽한 선형파동방정식이 된다.
+$$\nabla^p-\frac{1}{c_0^2}\frac{\partial^2p}{\partial t^2}=0$$
+
+      
+  $c\equiv\sqrt{\left.\frac{\partial p}{\partial\rho}\right|_s}$
+  $\le$
+  </p>
+</body>
+</html>
