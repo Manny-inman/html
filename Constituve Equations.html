@@ -29,11 +29,16 @@
 고체와 유체(액체+기체)의 가장 큰 차이는 탄성이다. 고체는 형태가 있으며 구조가 훼손되지 않는 선에서 힘을 주어 변형시키면 탄성력이 생겨 형태를 복원하려한다. 반면 유체는 탄성력이 없기 때문에 형태를 변형시켜도 변형된 모습을 유지한다.
 액체와 기체의 차이점은 부피이다. closed system에서 액체 또는 기체가 가득 차있을때 부피를 늘리면 어떻게 될까? 기체는 늘인 부피에 맞게 여전히 가득차지만, 액체는 일반적으로 비압축성 특성으로 인해 나머지 공간들은 액체로부터 기화한 기체들로 채워진다. 즉, 액체는 형태는 없지만 부피를 일정하게 유지하려는 성향을 띄는 반면 기체는 형태도, 부피도 조건에 따라 자유롭게 변할 수 있다는 것이 차이점이다.
 </p>
-<h2>Constituve Equation of Solid</<h2>
+<h2>Constitutive Equation of Solid</<h2>
 <p>
 길이가 \(L\), 단면적이 \(A\)인 막대를 \(F\)의 힘으로 양쪽에서 잡아당겨 늘이면 정지상태에서 탄성력과 장력이 일정하게 유지되므로 다음과 같이 표현할 수 있다.
 $$F-k\left( L,A \right)x=0$$
 위 식은 Hooke's law이며 \(k\)는 탄성계수, \(x\)는 늘어난 길이다. 이를 물체의 형태에 관계없이 물성만을 나타내는 식으로 변형해보자.
+$$\sigma = E\epsilon$$
+이때, \(\sigma\)는 general stress, \(\epsilon\)은 general strain이며 \(E\)는 elastic modulus이다.
+이를 3차원 형태로 가져오면 stress, strain 모두 2nd order tensor 형태를 가지므로 아래 식으로 표현할 수 있다.
+$$\sigma_{ij} = C_{ijkl}\epsilon_{kl} \Leftrightarrow \epsilon_{ij} = S_{ijkl}\sigma_{kl}$$
+이때, \(C\)는 elasticity tensor, \(S\)는 compliance tensor이다.
 
 유체역학 보존식으로부터 acoustic wave equation을 유도할 수 있다.
     mass conservation 식에 시간미분을, momentum conservation 식에 divergence를 해서 각각 빼면 아래와 같다.
